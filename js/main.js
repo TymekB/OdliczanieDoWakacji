@@ -18,4 +18,15 @@ $(document).ready(function() {
 
     showTimeLeft();
 
+    let mainTitleHtml = $('#main-title').html();
+
+    $(window).resize(function() {
+        let width = $(window).width();
+
+        if (width < 525) {
+            $('#main-title').html(`Odliczanie Do <span class="primary-color">Wakacji</span>`);
+        } else {
+            $('#main-title').html(mainTitleHtml);
+        }
+    });
 });
