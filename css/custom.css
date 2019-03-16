@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#wrapper {
+    flex: 1;
+}
+
+.header {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+
+.title {
+    font-weight: 300;
+}
+
+.time-header {
+    font-size: 80px;
+    padding: 5px;
+}
+
+.primary-color {
+    color: #209cee;
+}
+
+#timer {
+    margin-top: 50px;
+}
+
+/*.column {*/
+    /*margin: 5px;*/
+/*}*/
+
+/*.column-bordered {*/
+    /*background: #f9f9f9;*/
+    /*border: 1px solid #dfdfdf;*/
+/*}*/
