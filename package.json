@@ -1,0 +1,20 @@
+{
+  "name": "OdliczanieDoWakacji",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TymekB/OdliczanieDoWakacji.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TymekB/OdliczanieDoWakacji/issues"
+  },
+  "homepage": "https://tymekb.github.io/odliczaniedowakacji"
+}
