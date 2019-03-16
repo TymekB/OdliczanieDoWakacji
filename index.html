@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OdliczanieDoWakacji</title>
+
+    <link rel="stylesheet" href="css/app.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="header has-text-centered">
+    <h1 class="title" id="main-title">Odliczanie Do <span class="primary-color">Wakacji</span>.pl</h1>
+</header>
+
+<article>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-6 is-offset-3 has-text-centered">
+                <div class="columns" id="timer">
+                    <div class="column">
+                        <div class="time-header" id="days"></div>
+                        dni
+                    </div>
+
+                    <div class="column">
+                        <div class="time-header" id="hours"></div>
+                        godziny
+                    </div>
+
+                    <div class="column">
+                        <div class="time-header" id="minutes"></div>
+                        minuty
+                    </div>
+
+                </div>
+
+                <progress class="progress is-info" value="45" max="100" id="progress-bar">45%</progress>
+                <span class="primary-color" id="progress"></span>
+                <br>
+
+                <a href="https://github.com/TymekB/" class="button is-primary" target="_blank" style="margin-top: 30px;">
+                    <i class="fab fa-github"></i>&nbsp;Github
+                </a>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/dateDiff.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

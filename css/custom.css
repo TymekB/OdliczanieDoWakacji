@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#wrapper {
+    flex: 1;
+}
+
+.container {
+    padding: 20px;
+}
+
+.header {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
+
+.title {
+    font-weight: 300;
+}
+
+.time-header {
+    font-size: 80px;
+    padding: 5px;
+}
+
+.primary-color {
+    color: #209cee;
+}
+
+#timer {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+@media(max-width: 700px) {
+    .time-header {
+        font-size: 60px;
+    }
+}
