@@ -16,6 +16,7 @@ function showTimeLeft() {
 
 $(document).ready(function() {
 
+    showTimeLeft();
     setInterval(showTimeLeft, 1000);
 
     let mainTitleHtml = $('#main-title').html();
