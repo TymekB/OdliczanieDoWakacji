@@ -14,7 +14,9 @@
 <body>
 
 <header class="header has-text-centered">
-    <h1 class="title">Odliczanie-Do-<span class="primary-color">Wakacji</span>.pl</h1>
+    <h1 class="title" id="main-title">
+        Odliczanie-Do-<span class="primary-color">Wakacji</span>.pl
+    </h1>
 </header>
 
 <article>
@@ -23,24 +25,24 @@
             <div class="column is-6 is-offset-3 has-text-centered">
                 <div class="columns" id="timer">
                     <div class="column">
-                        <div class="time-header" id="days">15</div>
+                        <div class="time-header" id="days"></div>
                         dni
                     </div>
 
                     <div class="column">
-                        <div class="time-header" id="hours">05</div>
+                        <div class="time-header" id="hours"></div>
                         godziny
                     </div>
 
                     <div class="column">
-                        <div class="time-header" id="minutes">02</div>
+                        <div class="time-header" id="minutes"></div>
                         minuty
                     </div>
 
                 </div>
 
-                <progress class="progress is-info" value="45" max="100">45%</progress>
-                <span class="primary-color">45%</span>
+                <progress class="progress is-info" value="45" max="100" id="progress-bar">45%</progress>
+                <span class="primary-color" id="progress"></span>
                 <br>
 
                 <a class="button is-primary" style="margin-top: 30px;">

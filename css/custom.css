@@ -8,6 +8,10 @@ body {
     flex: 1;
 }
 
+.container {
+    padding: 20px;
+}
+
 .header {
     padding: 60px 0;
     background: #f9f9f9;
@@ -27,15 +31,7 @@ body {
 }
 
 #timer {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
-/*.column {*/
-    /*margin: 5px;*/
-/*}*/
-
-/*.column-bordered {*/
-    /*background: #f9f9f9;*/
-    /*border: 1px solid #dfdfdf;*/
-/*}*/
