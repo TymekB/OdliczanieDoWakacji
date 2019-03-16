@@ -24,7 +24,10 @@ $(document).ready(function() {
         let width = $(window).width();
 
         if (width < 525) {
-            $('#main-title').html(`Odliczanie Do <span class="primary-color">Wakacji</span>`);
+
+            let newTitle = mainTitleHtml.substr(0, mainTitleHtml.length-3);
+            $('#main-title').html(newTitle);
+
         } else {
             $('#main-title').html(mainTitleHtml);
         }
