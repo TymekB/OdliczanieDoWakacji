@@ -1,17 +1,21 @@
 function showTimeLeft() {
-    let startDate = new Date(2018, 8, 2);
-    let endDate = new Date(2019, 5, 21);
+    let start = new Date(2018, 8, 3);
+    let end = new Date(2019, 5, 21);
 
-    let totalDays = $(startDate).diff(endDate);
-    let daysLeft = $(new Date()).diff(endDate).format();
-    let progress = Math.floor(((totalDays.days - daysLeft.days ) / totalDays.days) * 100);
+    const units = countdown.DAYS|countdown.HOURS|countdown.MINUTES;
 
-    $("#days").html(daysLeft.days);
-    $("#hours").html(daysLeft.hours);
-    $("#minutes").html(daysLeft.minutes);
+    let total = countdown(start, end, units);
+    let daysLeft = countdown(end, null, units);
+    let progress = (total.days - daysLeft.days) / total.days * 100;
 
-    $("#progress").html(progress + "%");
+    let formattedDate = $(daysLeft).formatDate();
+
+    $("#days").html(formattedDate.days);
+    $("#hours").html(formattedDate.hours);
+    $("#minutes").html(formattedDate.minutes);
+
     $("#progress-bar").val(progress);
+    $("#progress").html(Math.floor(progress) + "%");
 }
 
 $(document).ready(function() {
@@ -19,18 +23,18 @@ $(document).ready(function() {
     showTimeLeft();
     setInterval(showTimeLeft, 1000);
 
-    let mainTitleHtml = $('#main-title').html();
+    const mainTitleHtml = $('#main-title').html();
 
     $(window).resize(function() {
+
         let width = $(window).width();
 
-        if (width < 525) {
+        if (width >= 700) {
 
-            let newTitle = mainTitleHtml.substr(0, mainTitleHtml.length-3);
-            $('#main-title').html(newTitle);
+            $('#main-title').html(mainTitleHtml + ".pl");
 
         } else {
-            $('#main-title').html(mainTitleHtml);
+            $("#main-title").html(mainTitleHtml);
         }
     });
 });
