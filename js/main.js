@@ -23,18 +23,4 @@ $(document).ready(function() {
     showTimeLeft();
     setInterval(showTimeLeft, 1000);
 
-    const mainTitleHtml = $('#main-title').html();
-
-    $(window).resize(function() {
-
-        let width = $(window).width();
-
-        if (width >= 700) {
-
-            $('#main-title').html(mainTitleHtml + ".pl");
-
-        } else {
-            $("#main-title").html(mainTitleHtml);
-        }
-    });
 });
