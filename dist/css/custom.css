@@ -12,6 +12,11 @@ body {
     padding: 20px;
 }
 
+.github-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .header {
     padding: 60px 0;
     background: #f8f8f8;
