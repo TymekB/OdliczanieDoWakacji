@@ -9686,10 +9686,6 @@ body {
     flex-direction: column !important;
     justify-content: center !important;
   }
-
-  .mt-5, .mb-5 {
-    display: none;
-  }
 }
 
 /*# sourceMappingURL=app.css.map */
