@@ -3,11 +3,11 @@ body {
     margin: 20px;
 }
 
-.countdown .countdown-header {
+#countdown .countdown-header {
     font-size: 70px;
 }
 
-.countdown p {
+#countdown p {
     font-size: 20px;
     color: gray;
 }
@@ -17,8 +17,8 @@ body {
         margin: 0;
     }
 
-    .countdown .countdown-header {
-        font-size: 100px;
+    #countdown .countdown-header {
+        font-size: 85px;
     }
 
     .vertical-center {

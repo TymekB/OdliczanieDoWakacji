@@ -19,25 +19,27 @@
 <header>
     <div class="container h-100">
         <div class="text-center vertical-center mt-5 mb-5">
-            <div class="row">
+            <div class="row" id="countdown">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
-                    <div class="row countdown">
-                        <div class="col-md-4">
-                            <div class="countdown-header">20</div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="countdown-header">{{ dateDifference.days }}</div>
                             <p>dni</p>
                         </div>
-                        <div class="col-md-4">
-                            <div class="countdown-header">05</div>
+                        <div class="col-lg-4">
+                            <div class="countdown-header">{{ dateDifference.hours }}</div>
                             <p>godziny</p>
                         </div>
-                        <div class="col-md-4">
-                            <div class="countdown-header">05</div>
+                        <div class="col-lg-4">
+                            <div class="countdown-header">{{ dateDifference.minutes }}</div>
                             <p>minuty</p>
                         </div>
                     </div>
                     <div class="progress mt-5">
-                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">12%</div>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0"
+                             aria-valuemin="0" aria-valuemax="100">{{ progress }}%
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,8 +49,26 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/formatDate.js"></script>
+
 <script src="js/countdown.min.js"></script>
-<script src="js/main.js"></script>
+<!--<script src="js/main.js"></script>-->
+
+<script src="js/vue.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+
+    $(document).ready(function() {
+
+    	let bar = $('.progress-bar');
+
+		bar.css('width', bar.html());
+    	bar.attr('aria-valuenow', bar.html());
+
+    });
+
+
+</script>
 
 </body>
 </html>
