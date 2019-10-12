@@ -4,16 +4,12 @@ body {
 }
 
 .countdown .countdown-header {
-    font-size: 80px;
+    font-size: 70px;
 }
 
 .countdown p {
     font-size: 20px;
     color: gray;
-}
-
-.centered {
-    margin-top: 50px;
 }
 
 @media(min-width: 1000px) {
@@ -25,11 +21,15 @@ body {
         font-size: 100px;
     }
 
-    .centered {
+    .vertical-center {
         margin: 0 !important;
         height: 100vh !important;
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
+    }
+
+    .mt-5, .mb-5 {
+        display: none;
     }
 }
