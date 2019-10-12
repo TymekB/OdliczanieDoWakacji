@@ -1,0 +1,31 @@
+body {
+    font-weight: 300;
+    margin: 20px;
+}
+
+.countdown .countdown-header {
+    font-size: 70px;
+}
+
+.countdown p {
+    font-size: 20px;
+    color: gray;
+}
+
+@media(min-width: 1000px) {
+    body {
+        margin: 0;
+    }
+
+    .countdown .countdown-header {
+        font-size: 100px;
+    }
+
+    .vertical-center {
+        margin: 0 !important;
+        height: 100vh !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+}
