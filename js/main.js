@@ -1,6 +1,6 @@
 function showTimeLeft() {
-    let start = new Date(2018, 8, 3);
-    let end = new Date(2019, 5, 21);
+    let start = new Date(2019, 8, 2);
+    let end = new Date(2020, 5, 27);
 
     const units = countdown.DAYS|countdown.HOURS|countdown.MINUTES;
 
